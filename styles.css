@@ -1,0 +1,24 @@
+* {
+    font-family: Helvetica, Roboto, arial;
+    color: rgb(60,60,60);
+    
+}
+
+table {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+td,th,table {
+    border: 1px solid rgb(60,60,60);
+    border-collapse: collapse;
+    padding: 0.4rem;
+    text-align: left;
+    overflow:auto;
+    height: 1.5rem;
+}
+
+
+.container {
+    margin: 2% 10%;
+}
