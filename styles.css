@@ -1,11 +1,10 @@
 * {
-    font-family: Helvetica, Roboto, arial;
-    color: rgb(60,60,60);
-    
+    font-family: Helvetica, Roboto, arial;    
 }
 
 table,label {
-    font-size: 1.3rem;
+    font-size: 1rem;
+    
 }
 
 .break {
@@ -36,9 +35,19 @@ td,th,table {
     text-align: left;
     overflow:auto;
     height: 1.5rem;
+    
+    font-size: 0.9em;
+    font-family: sans-serif;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 
 
 .container {
-    margin: 2% 10%;
+    margin: 2% 5%;
+}
+
+.tableHead {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
 }
