@@ -9,7 +9,28 @@
 </head>
 <body>
     <div class="container">
+        
         <h1>My Library</h1>
+        <div class="form">
+            <form action="" method="post">
+                <div>
+                    <label for="title">Title:</label>
+                    <input type="text" name="title" id="title">
+                </div>
+                <div>
+                    <label for="author">Author:</label>
+                    <input type="text" name="author" id="author">
+                </div>
+                <div>
+                    <label for="read">Read yet:</label>
+                    <input type="checkbox" name="read" id="read">
+                </div>
+                <div class="break"></div>
+                <div>
+                    <input type="button" value="Add Book" id="submit">
+                </div>
+            </form>
+        </div>
         <table class="libraryTable">
             <colgroup>
                 <col span="1" style="width:40%;">
@@ -23,20 +44,7 @@
                 <th>Already Read</th>
             </tr>
         </table>
-        <div>
-            <form action="" method="post">
-                <label for="title">Title:</label>
-                <input type="text" name="title" id="title">
-                
-                <label for="author">Author:</label>
-                <input type="text" name="author" id="author">
-                
-                <label for="read">Read yet:</label>
-                <input type="checkbox" name="read" id="read">
-
-                <input type="button" value="Add Book" id="submit">
-            </form>
-        </div>
+        
     
     </div>
 </body>

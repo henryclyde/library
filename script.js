@@ -9,17 +9,14 @@ function Book(title,author,readYet) {
 }
 
 function addBook() {
-    // let title = prompt("What book would you like to add?");
-    // let author = prompt(`Who is the author of "${title}"`);
-    // let readYet = prompt(`Have you read "${title}" yet? (yes/no)`);
     let title = document.getElementById("title").value;
     let author = document.getElementById("author").value;
-    let readYet = document.getElementById("read").value;
+    let readYet = document.getElementById("read");
     const newBook = new Book(title,author,readYet);
     myLibrary.push(newBook);
     let titleText = document.createTextNode(`${myLibrary[myLibrary.length-1].title}`);
     let authorText = document.createTextNode(`${myLibrary[myLibrary.length-1].author}`);
-    let readText = document.createTextNode(`${myLibrary[myLibrary.length-1].readYet}`);
+    let readText =  document.createTextNode(`${readYet.checked === true ? "Yes" : "No"}`);
     addBookToTable(titleText,authorText,readText);
 }
 
@@ -50,7 +47,3 @@ function populateBooks() {
         addBookToTable(titleText,authorText,readText);
     }
 }
-
-addBook();
-populateBooks();
-console.log(myLibrary);
